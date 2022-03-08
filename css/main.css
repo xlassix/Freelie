@@ -199,7 +199,7 @@ header button:focus {
 }
 #Do_it figure a {
   padding: 1rem 2.25rem;
-  border: 2px solid currentColor;
+  border: 1.5px solid currentColor;
   font-family: "Roboto", "Euclid Circular A Regular";
   font-weight: 700;
   transition: 0.25s;
@@ -210,7 +210,7 @@ header button:focus {
   padding: 0.9rem 2rem;
   margin-left: 0.4rem;
   color: var(--color-yellow);
-  border: 2px solid var(--color-dark);
+  border: 1.5px solid var(--color-dark);
   background-color: var(--color-dark);
 }
 
@@ -293,12 +293,12 @@ header button:focus {
 }
 
 #question a {
-  border: 2px solid var(--color-dark);
+  border: 1.5px solid var(--color-dark);
   padding: 1rem 2.25rem;
   transition: 0.25s;
 }
 #question a:last-child {
-  border: 2px solid transparent;
+  border: 1.5px solid transparent;
   padding: 1rem 2.25rem;
   background-color: #245db3;
   color: var(--color-light);
@@ -306,7 +306,7 @@ header button:focus {
 }
 
 #question a:hover {
-  border: 2px solid transparent;
+  border: 1.5px solid transparent;
   background-color: var(--color-dark);
   color: var(--color-brown) ;
   padding: 0.9rem 2.0rem;
