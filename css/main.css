@@ -1,0 +1,329 @@
+@font-face {
+  font-family: "Euclid Circular A Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Euclid\ Circular\ A\ Regular.ttf") format("ttf");
+}
+
+:root {
+  --color-blue: #296acc;
+  --color-yellow: #feb423;
+  --color-light1: #fff9ed;
+  --color-light-blue: #f1f3f5;
+  --color-brown: #fcb58a;
+  --color-light: white;
+  --color-dark: black;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Euclid Circular A Regular", Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-style1);
+  color: var(--color-light);
+}
+
+header {
+  background-color: var(--color-blue);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+}
+nav li {
+  list-style-type: none;
+  padding: 0 4rem 0 0rem;
+}
+
+svg {
+  width: 2rem;
+}
+
+.flex-center-sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-50-img {
+  flex-basis: 50%;
+  width: 100%;
+}
+.flex-50 {
+  flex-basis: 50%;
+}
+
+p,a,
+figcaption {
+  font-family: "Roboto", "Euclid Circular A Regular";
+}
+figcaption {
+  font-weight: 300;
+}
+
+.bg-blue {
+  background-color: var(--color-blue);
+}
+.bg-light-blue {
+  background-color: var(--color-light-blue);
+  color: var(--color-dark);
+}
+.bg-brown {
+  background-color: var(--color-brown);
+  color: var(--color-dark);
+}
+.bg-yellow {
+  background-color: var(--color-yellow);
+  color: var(--color-dark);
+}
+.bg-light2 {
+  background-color: #fff9ed;
+  color: var(--color-dark);
+}
+
+nav,
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 svg {
+  fill: currentColor;
+}
+h1 {
+  position: relative;
+  left: -5rem;
+}
+header button {
+  background-color: transparent;
+  border-radius: 0;
+  border: 3px solid currentColor;
+  color: currentColor;
+  padding: 0.75rem 2rem;
+  transition: 0.25s;
+}
+
+header button:hover,
+header button:focus {
+  background-color: transparent;
+  border-radius: 0;
+  background-color: var(--color-light);
+  color: var(--color-blue);
+  padding: 0.75rem 2rem;
+}
+
+.intro {
+  padding-right: 2.5rem;
+}
+
+.intro h2 {
+  font-size: 3.65rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+.intro p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  max-width: 29rem;
+}
+
+.intro a {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  background-color: var(--color-light);
+  color: var(--color-blue);
+  border: 3px solid transparent;
+  transition: 0.2s;
+}
+
+.intro a:hover,
+.intro a:focus {
+  cursor: pointer;
+  padding: 0.65rem 1.85rem;
+  margin-left: 0.25rem;
+  border: 3px solid var(--color-light);
+  background-color: var(--color-blue);
+  color: var(--color-light);
+}
+.header-1 {
+  padding: 6rem 0;
+}
+#GetStarted,
+#Do_it {
+  padding-bottom: 10rem;
+}
+
+.col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.col-center h2 {
+  max-width: 35rem;
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 600;
+}
+.col-center p {
+  margin-top: 0;
+  max-width: 35rem;
+  text-align: center;
+  font-family: "Roboto", "Euclid Circular A Regular";
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+#Do_it figure a {
+  padding: 1rem 2.25rem;
+  border: 2px solid currentColor;
+  font-family: "Roboto", "Euclid Circular A Regular";
+  font-weight: 700;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+#Do_it figure a:hover {
+  padding: 0.9rem 2rem;
+  margin-left: 0.4rem;
+  color: var(--color-yellow);
+  border: 2px solid var(--color-dark);
+  background-color: var(--color-dark);
+}
+
+#Do_it figure p {
+  margin-bottom: 4rem;
+  max-width: 36rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-family: "Roboto", "Euclid Circular A Regular";
+}
+#Do_it figure h3 {
+  font-size: 2.25rem;
+  margin: 0;
+  font-weight: 500;
+}
+#Do_it > span {
+  margin: 4rem 0;
+}
+
+#help-you > div,
+#sponsors > div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  padding-bottom: 4rem;
+}
+
+#help-you figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 30%;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+#help-you figure figcaption,
+#sponsors figcaption {
+  max-width: 12rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#help-you h2,
+#sponsors h2 {
+  margin: 0;
+  padding: 6rem 0 0 3rem;
+  font-size: 3.2rem;
+  text-align: center;
+}
+#sponsors p {
+  text-align: center;
+  font-weight: 300;
+}
+#sponsors figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#sponsors {
+  padding: 5rem 0;
+}
+#question {
+  padding: 8rem 0;
+}
+#question p {
+  max-width: 28rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.44;
+  margin-bottom: 4rem;
+}
+#question h2 {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+#question a {
+  border: 2px solid var(--color-dark);
+  padding: 1rem 2.25rem;
+  transition: 0.25s;
+}
+#question a:last-child {
+  border: 2px solid transparent;
+  padding: 1rem 2.25rem;
+  background-color: #245db3;
+  color: var(--color-light);
+  margin: 0 1.5rem;
+}
+
+#question a:hover {
+  border: 2px solid transparent;
+  background-color: var(--color-dark);
+  color: var(--color-brown) ;
+  padding: 0.9rem 2.0rem;
+  margin: 0 0.25rem 0  1rem ;
+}
+
+#question .flex{
+  gap: 5%;
+}
+
+#plan{
+  padding: 7rem 0;
+}
+#plan p{
+  padding:1rem 0 3rem;
+}
+#plan a{
+  padding: 1rem 2rem;
+  background-color: var(--color-yellow) ;
+}
